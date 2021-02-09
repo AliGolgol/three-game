@@ -9,7 +9,7 @@ The receiving player can now always choose between adding one of {-1, 0, 1} to g
 The resulting whole number is then sent back to the original sender.
 
 #### Solution 
-Using rich domain model instead of anemic domain model, hence data and behaviour sit together. There are two aggregates which are Player and Game Round. I used circle array to manage Player's turn and Memento pattern to save and restore input and out of each move.
+Using rich domain model instead of anemic domain model, hence data and behaviour sit together. There are two aggregates which are Player and Game Round. I used circle array to manage Player's turn and Memento pattern to save and restore output of each move.
 
 #### Config
 The main and test project has its own application.properties so you can config each base on your criteria
