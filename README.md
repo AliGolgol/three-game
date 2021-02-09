@@ -27,8 +27,8 @@ The main and test project has its own application.properties so you can config e
 - The address of swagger is: `http://loclahost:8080/swagger-ui.html`
 
 ### Or
-- run to build app: `mvn compile` or `mvn clean`
-- also run tests: `mvn test` 
+- run to build app: `mvn clean` then `mvn package`
+- run 'java -jar target/game-of-three.jar'
 - It is recommended to run the AcceptanceTest, to do that you can look in test/java/com.codeassignment.gameofthree/controller/AcceptanceTest and see the end to end test result
 
 Thanks
