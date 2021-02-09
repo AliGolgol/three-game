@@ -13,3 +13,22 @@ Using rich domain model instead of anemic domain model, hence data and behaviour
 
 #### Config
 The main and test project has its own application.properties so you can config each base on your criteria
+##### Configuration
+- to configure the application set the `resources/application.properties`
+- to change logging level set in the `resources/log4j.properties`
+##### Requirements
+- java 11
+- maven 3
+
+### Run
+- To run it use this command: `sudo docker build -t game-of-three .`
+- Then we run the docker image: `sudo docker run -p 8090:8080 game-of-three`
+- The address of rest api is: `http://loclahost:8080`
+- The address of swagger is: `http://loclahost:8080/swagger-ui.html`
+
+### Or
+- run to build app: `mvn compile` or `mvn clean`
+- also run tests: `mvn test` 
+- It is recommended to run the AcceptanceTest, to do that you can look in test/java/com.codeassignment.gameofthree/controller/AcceptanceTest and see the end to end test result
+
+Thanks
